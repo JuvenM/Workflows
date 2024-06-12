@@ -204,3 +204,90 @@ Close Outlook.
 Navigate to C:\Users\[YourUsername]\AppData\Local\Microsoft\Outlook\Temp.
 Delete all files in the Temp folder.
 By following these steps, you should be able to resolve the issue of Outlook not being able to find the file even though it is accessible normally outside of Outlook. If the problem persists, it may be beneficial to consult with your IT department or further investigate network and system settings.
+
+
+
+how do i renew VPP Token Expiry for jamf pro?
+ChatGPT
+Renewing the VPP (Volume Purchase Program) token for Jamf Pro is essential to ensure continued synchronization between Jamf Pro and Apple’s Volume Purchase Program for distributing apps and books. Here’s a step-by-step guide to renew the VPP token:
+
+Steps to Renew VPP Token for Jamf Pro
+Log into Apple School Manager or Apple Business Manager:
+
+Go to the Apple School Manager or Apple Business Manager portal.
+Sign in with the Apple ID that was used to set up the VPP account.
+Download the VPP Token:
+
+In Apple School Manager or Apple Business Manager, navigate to Settings.
+Go to Apps and Books.
+Click on Download Token next to the location that needs a new token. Save the downloaded .vpptoken file to a secure location on your computer.
+Log into Jamf Pro:
+
+Open your Jamf Pro instance by navigating to your Jamf Pro URL in a web browser.
+Sign in with your admin credentials.
+Navigate to Global Management Settings:
+
+Click on Settings in the top right corner (the gear icon).
+Under Global Management, click on Volume Purchasing.
+Upload the New VPP Token:
+
+Find the location that corresponds to the token you downloaded.
+Click on the Edit button next to the location.
+Click on Upload Token and select the .vpptoken file you downloaded from Apple School Manager or Apple Business Manager.
+Click Save.
+Verify the Renewal:
+
+Once the token is uploaded, verify that the expiration date has been updated.
+Check that the token status shows as active and that apps and books are syncing correctly.
+Important Considerations
+Timing: Renew the VPP token before it expires to ensure continuous access to apps and books. It's recommended to set a calendar reminder for this task.
+Permissions: Ensure you have the necessary permissions in both Apple School Manager/Apple Business Manager and Jamf Pro to download and upload the VPP token.
+Backup: Keep a backup of the downloaded VPP token file in a secure location.
+Troubleshooting Tips
+Token Mismatch: Ensure you download the token for the correct location that matches the one set up in Jamf Pro.
+Sync Issues: If you encounter issues with syncing apps after uploading the new token, try refreshing the token or contacting Jamf support for further assistance.
+Network Restrictions: Ensure there are no network restrictions or firewall rules that could prevent communication between Jamf Pro and Apple's servers.
+By following these steps, you should be able to successfully renew your VPP token in Jamf Pro, ensuring uninterrupted management of your purchased apps and books.
+
+how do i renew DEP Token Expiry for jamf pro?
+ChatGPT
+Renewing the DEP (Device Enrollment Program) token for Jamf Pro is essential to maintain the connection between your Jamf Pro server and Apple’s Automated Device Enrollment (formerly known as DEP). Here’s a detailed guide on how to renew the DEP token:
+
+Steps to Renew DEP Token for Jamf Pro
+Log into Apple School Manager or Apple Business Manager:
+
+Go to the Apple School Manager or Apple Business Manager portal.
+Sign in with the Apple ID associated with your organization's DEP account.
+Download the New DEP Token:
+
+In Apple School Manager or Apple Business Manager, navigate to Settings.
+Select Device Management Settings.
+Find the MDM server associated with your Jamf Pro instance and click on it.
+Click on Download Token to download the new .p7m file. Save this file to a secure location on your computer.
+Log into Jamf Pro:
+
+Open your Jamf Pro instance by navigating to your Jamf Pro URL in a web browser.
+Sign in with your admin credentials.
+Navigate to Global Management Settings:
+
+Click on Settings (the gear icon) in the top right corner.
+Under Global Management, select Device Enrollment Program.
+Upload the New DEP Token:
+
+Find the existing DEP instance that corresponds to the token you are renewing.
+Click on the Renew button next to the DEP instance.
+Click Upload New Token and select the .p7m file you downloaded from Apple School Manager or Apple Business Manager.
+Click Save.
+Verify the Renewal:
+
+Once the new token is uploaded, verify that the expiration date has been updated.
+Check that the DEP token status is active and that devices can still be enrolled.
+Important Considerations
+Timing: Renew the DEP token before it expires to avoid any disruption in device enrollment. Set a calendar reminder for this task.
+Permissions: Ensure you have the necessary permissions in both Apple School Manager/Apple Business Manager and Jamf Pro to download and upload the DEP token.
+Backup: Keep a backup of the downloaded DEP token file in a secure location.
+Troubleshooting Tips
+Token Mismatch: Ensure you download the token for the correct MDM server that matches the one set up in Jamf Pro.
+Enrollment Issues: If you encounter issues with device enrollment after uploading the new token, try refreshing the token or contacting Jamf support for further assistance.
+Network Restrictions: Ensure there are no network restrictions or firewall rules that could prevent communication between Jamf Pro and Apple's servers.
+By following these steps, you should be able to successfully renew your DEP token in Jamf Pro, ensuring continuous and seamless device enrollment.
